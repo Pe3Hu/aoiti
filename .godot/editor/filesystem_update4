@@ -1,0 +1,12 @@
+res://scene/0/blank.tscn
+res://scene/0/game.tscn
+res://scene/1/playfield.tscn
+res://scene/1/island.tscn
+res://scene/1/land.tscn
+res://scene/1/playfield.gd
+res://script/Global.gd
+res://scene/0/sketch.tscn
+res://scene/1/island.gd
+res://scene/1/land.gd
+res://scene/1/boundary.tscn
+res://scene/1/boundary.gd
