@@ -200,7 +200,7 @@
   "protector": "yes",
   "bay": "no",
   "ruin": "no",
-  "cave": "no",
+  "cave": "yes",
   "portal": "no"
  },
  {
@@ -224,7 +224,7 @@
   "protector": "no",
   "bay": "yes",
   "ruin": "no",
-  "cave": "yes",
+  "cave": "no",
   "portal": "no"
  },
  {
@@ -413,7 +413,7 @@
   "grid x": 0,
   "grid y": 1,
   "terrain": "steppe",
-  "protector": "no",
+  "protector": "yes",
   "bay": "no",
   "ruin": "no",
   "cave": "yes",
@@ -437,7 +437,7 @@
   "grid x": 2,
   "grid y": 1,
   "terrain": "steppe",
-  "protector": "yes",
+  "protector": "no",
   "bay": "yes",
   "ruin": "no",
   "cave": "no",

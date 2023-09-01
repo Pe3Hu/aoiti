@@ -1,0 +1,162 @@
+[
+ {
+  "title": "blood elf",
+  "population": 5,
+  "tax": "anomaly",
+  "invasion land": "no",
+  "invasion strength": 0,
+  "feature": "no",
+  "disembarkation": "no",
+  "available": "yes"
+ },
+ {
+  "title": "draenei",
+  "population": 7,
+  "tax": "no",
+  "invasion land": "no",
+  "invasion strength": 0,
+  "feature": "holy light",
+  "disembarkation": "no",
+  "available": "no"
+ },
+ {
+  "title": "dwarf",
+  "population": 5,
+  "tax": "no",
+  "invasion land": "mountain",
+  "invasion strength": 2,
+  "feature": "no",
+  "disembarkation": "no",
+  "available": "yes"
+ },
+ {
+  "title": "ethereal",
+  "population": 5,
+  "tax": "no",
+  "invasion land": "no",
+  "invasion strength": 0,
+  "feature": "artifact theft",
+  "disembarkation": "no",
+  "available": "no"
+ },
+ {
+  "title": "forsaken",
+  "population": 6,
+  "tax": "no",
+  "invasion land": "no",
+  "invasion strength": 0,
+  "feature": "undead",
+  "disembarkation": "no",
+  "available": "yes"
+ },
+ {
+  "title": "gnome",
+  "population": 5,
+  "tax": "no",
+  "invasion land": "no",
+  "invasion strength": 0,
+  "feature": "flying machines",
+  "disembarkation": "no",
+  "available": "yes"
+ },
+ {
+  "title": "goblin",
+  "population": 6,
+  "tax": "no",
+  "invasion land": "no",
+  "invasion strength": 0,
+  "feature": "bombs",
+  "disembarkation": "no",
+  "available": "no"
+ },
+ {
+  "title": "human",
+  "population": 5,
+  "tax": "no",
+  "invasion land": "no",
+  "invasion strength": 0,
+  "feature": "strategy",
+  "disembarkation": "no",
+  "available": "no"
+ },
+ {
+  "title": "kobold",
+  "population": 6,
+  "tax": "no",
+  "invasion land": "no",
+  "invasion strength": 0,
+  "feature": "underground",
+  "disembarkation": "cave",
+  "available": "yes"
+ },
+ {
+  "title": "naga",
+  "population": 6,
+  "tax": "no",
+  "invasion land": "no",
+  "invasion strength": 0,
+  "feature": "amphibian",
+  "disembarkation": "pond",
+  "available": "yes"
+ },
+ {
+  "title": "night elf",
+  "population": 4,
+  "tax": "no",
+  "invasion land": "forest",
+  "invasion strength": 1,
+  "feature": "firefly wall",
+  "disembarkation": "no",
+  "available": "yes"
+ },
+ {
+  "title": "orc",
+  "population": 6,
+  "tax": "no",
+  "invasion land": "no",
+  "invasion strength": 0,
+  "feature": "conquerors",
+  "disembarkation": "no",
+  "available": "yes"
+ },
+ {
+  "title": "pandaren",
+  "population": 5,
+  "tax": "no",
+  "invasion land": "no",
+  "invasion strength": 0,
+  "feature": "harmony",
+  "disembarkation": "no",
+  "available": "no"
+ },
+ {
+  "title": "tauren",
+  "population": 11,
+  "tax": "no",
+  "invasion land": "no",
+  "invasion strength": 0,
+  "feature": "herd",
+  "disembarkation": "no",
+  "available": "no"
+ },
+ {
+  "title": "troll",
+  "population": 6,
+  "tax": "no",
+  "invasion land": "occupied",
+  "invasion strength": 1,
+  "feature": "no",
+  "disembarkation": "no",
+  "available": "yes"
+ },
+ {
+  "title": "worgen",
+  "population": 5,
+  "tax": "no",
+  "invasion land": "no",
+  "invasion strength": 0,
+  "feature": "shapeshifters",
+  "disembarkation": "no",
+  "available": "no"
+ }
+]

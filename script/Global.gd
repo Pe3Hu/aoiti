@@ -24,6 +24,7 @@ func _ready() -> void:
 
 func init_arr() -> void:
 	arr.edge = [1, 2, 3, 4, 5, 6]
+	arr.token = ["bay", "ruin", "cave"]
 
 
 func init_num() -> void:
@@ -85,6 +86,8 @@ func init_dict() -> void:
 		dict.neighbor.hybrid2.append(dict.neighbor.diagonal2[_i])
 	
 	init_land()
+	init_race()
+	init_specialization()
 
 
 func init_land() -> void:
@@ -162,6 +165,84 @@ func init_land() -> void:
 	dict.crossroads[3].append([Vector2(2, 1), Vector2(1, 2)])
 
 
+func init_race() -> void:
+	dict.race = {}
+	dict.race.title = {}
+	var path = "res://asset/json/aoiti_race.json"
+	var array = load_data(path)
+	
+	for race in array:
+		if race.available == "yes":
+			var data = {}
+			data.invasion = {}
+			
+			for key in race:
+				var words = key.split(" ")
+				
+				if typeof(race[key]) == TYPE_FLOAT:
+					race[key] = int(race[key])
+				
+				if words.has("invasion"):
+					data.invasion[words[1]] = race[key]
+				else:
+					var value = race[key]
+					
+					match value:
+						"no":
+							value = false
+					
+					data[key] = value
+					
+					if typeof(value) == TYPE_BOOL:
+						data.erase(key)
+			
+			if data.invasion.strength == 0:
+				data.erase("invasion")
+			
+			data.erase("available")
+			dict.race.title[data.title] = data
+			dict.race.title[data.title].erase("title")
+
+
+func init_specialization() -> void:
+	dict.specialization = {}
+	dict.specialization.title = {}
+	var path = "res://asset/json/aoiti_specialization.json"
+	var array = load_data(path)
+	
+	for specialization in array:
+		if specialization.available == "yes":
+			var data = {}
+			data.invasion = {}
+			
+			for key in specialization:
+				var words = key.split(" ")
+				
+				if typeof(specialization[key]) == TYPE_FLOAT:
+					specialization[key] = int(specialization[key])
+				
+				if words.has("invasion"):
+					data.invasion[words[1]] = specialization[key]
+				else:
+					var value = specialization[key]
+					
+					match value:
+						"no":
+							value = false
+					
+					data[key] = value
+					
+					if typeof(value) == TYPE_BOOL:
+						data.erase(key)
+			
+			if data.invasion.strength == 0:
+				data.erase("invasion")
+			
+			data.erase("available")
+			dict.specialization.title[data.title] = data
+			dict.specialization.title[data.title].erase("title")
+
+
 func init_node() -> void:
 	node.game = get_node("/root/Game")
 
@@ -173,6 +254,10 @@ func init_scene() -> void:
 	scene.island = load("res://scene/1/island.tscn")
 	scene.land = load("res://scene/1/land.tscn")
 	scene.boundary = load("res://scene/1/boundary.tscn")
+	scene.icon = load("res://scene/1/icon.tscn")
+	scene.troop = load("res://scene/1/troop.tscn")
+	
+	scene.fraction = load("res://scene/2/fraction.tscn")
 	
 	
 	pass
@@ -204,12 +289,6 @@ func init_color():
 	color.terrain["hill"] = Color.from_hsv(80.0/360.0, 0.8, 0.9)
 	color.terrain["mountain"] = Color.from_hsv(180.0/360.0, 0.2, 0.9)
 	color.terrain["pond"] = Color.from_hsv(210.0/360.0, 0.8, 0.9)
-	
-
-
-
-
-
 
 
 func save(path_: String, data_: String):

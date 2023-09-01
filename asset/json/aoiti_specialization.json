@@ -1,0 +1,182 @@
+[
+ {
+  "title": "archaeologists",
+  "population": 5,
+  "tax": "ruin",
+  "invasion land": "no",
+  "invasion strength": 0,
+  "feature": "no",
+  "available": "yes"
+ },
+ {
+  "title": "warriors",
+  "population": 5,
+  "tax": "trophies",
+  "invasion land": "no",
+  "invasion strength": 0,
+  "feature": "no",
+  "available": "yes"
+ },
+ {
+  "title": "tamers",
+  "population": 4,
+  "tax": "no",
+  "invasion land": "no",
+  "invasion strength": 0,
+  "feature": "beastmasters",
+  "available": "no"
+ },
+ {
+  "title": "blacksmiths",
+  "population": 4,
+  "tax": "no",
+  "invasion land": "any",
+  "invasion strength": 1,
+  "feature": "no",
+  "available": "yes"
+ },
+ {
+  "title": "champions",
+  "population": 5,
+  "tax": "no",
+  "invasion land": "no",
+  "invasion strength": 0,
+  "feature": "champion",
+  "available": "no"
+ },
+ {
+  "title": "protectors",
+  "population": 6,
+  "tax": "no",
+  "invasion land": "no",
+  "invasion strength": 0,
+  "feature": "watchtowers",
+  "available": "no"
+ },
+ {
+  "title": "berserkers",
+  "population": 4,
+  "tax": "no",
+  "invasion land": "no",
+  "invasion strength": 0,
+  "feature": "rage",
+  "available": "no"
+ },
+ {
+  "title": "scouts",
+  "population": 4,
+  "tax": "island",
+  "invasion land": "no",
+  "invasion strength": 0,
+  "feature": "no",
+  "available": "yes"
+ },
+ {
+  "title": "farmers",
+  "population": 4,
+  "tax": "steppe",
+  "invasion land": "no",
+  "invasion strength": 0,
+  "feature": "no",
+  "available": "yes"
+ },
+ {
+  "title": "anglers",
+  "population": 3,
+  "tax": "shore",
+  "invasion land": "no",
+  "invasion strength": 0,
+  "feature": "no",
+  "available": "yes"
+ },
+ {
+  "title": "garrisons",
+  "population": 3,
+  "tax": "no",
+  "invasion land": "no",
+  "invasion strength": 0,
+  "feature": "forts",
+  "available": "yes"
+ },
+ {
+  "title": "herbalists",
+  "population": 4,
+  "tax": "hill",
+  "invasion land": "no",
+  "invasion strength": 0,
+  "feature": "no",
+  "available": "yes"
+ },
+ {
+  "title": "tyrants",
+  "population": 4,
+  "tax": "no",
+  "invasion land": "no",
+  "invasion strength": 0,
+  "feature": "intimidation",
+  "available": "no"
+ },
+ {
+  "title": "dirtbags",
+  "population": 4,
+  "tax": "no",
+  "invasion land": "no",
+  "invasion strength": 0,
+  "feature": "swamp lords",
+  "available": "no"
+ },
+ {
+  "title": "miners",
+  "population": 4,
+  "tax": "cave",
+  "invasion land": "no",
+  "invasion strength": 0,
+  "feature": "no",
+  "available": "yes"
+ },
+ {
+  "title": "climbers",
+  "population": 4,
+  "tax": "mountain",
+  "invasion land": "no",
+  "invasion strength": 0,
+  "feature": "no",
+  "available": "yes"
+ },
+ {
+  "title": "portalists",
+  "population": 5,
+  "tax": "no",
+  "invasion land": "no",
+  "invasion strength": 0,
+  "feature": "portals",
+  "available": "no"
+ },
+ {
+  "title": "lumberjacks",
+  "population": 4,
+  "tax": "forest",
+  "invasion land": "no",
+  "invasion strength": 0,
+  "feature": "no",
+  "available": "yes"
+ },
+ {
+  "title": "sailors",
+  "population": 5,
+  "tax": "no",
+  "invasion land": "disembarkation",
+  "invasion strength": 1,
+  "feature": "no",
+  "available": "yes"
+ },
+ {
+  "title": "peatbogs",
+  "population": 4,
+  "tax": "swamp",
+  "invasion land": "no",
+  "invasion strength": 0,
+  "feature": "no",
+  "available": "yes"
+ }
+]

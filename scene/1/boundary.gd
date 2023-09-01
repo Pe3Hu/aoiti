@@ -26,12 +26,8 @@ func check_crossroads() -> bool:
 	for land in lands:
 		grids.append(land.grid)
 	
-	print("____")
-	print(grids)
-	
 	for crossroad in Global.dict.crossroads[island.title]:
 		var flag = true
-		print(crossroad)
 		
 		for grid in crossroad:
 			if !grids.has(grid):

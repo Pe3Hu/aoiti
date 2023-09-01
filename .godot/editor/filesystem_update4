@@ -10,3 +10,15 @@ res://scene/1/island.gd
 res://scene/1/land.gd
 res://scene/1/boundary.tscn
 res://scene/1/boundary.gd
+res://scene/1/troop.tscn
+res://scene/1/troop.gd
+res://scene/0/game.gd
+res://scene/2/fraction.tscn
+res://scene/2/fraction.gd
+res://scene/1/icon.tscn
+res://scene/1/icon.gd
+res://asset/json/aoiti_land.json
+res://asset/json/aoiti_race.json
+res://asset/json/aoiti_specialization.json
+res://scene/2/market.tscn
+res://scene/2/market.gd

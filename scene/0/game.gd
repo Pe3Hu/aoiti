@@ -17,5 +17,5 @@ func _input(event) -> void:
 					pass
 
 
-func _process(delta_) -> void:
-	$FPS.text = str(Engine.get_frames_per_second())
+#func _process(delta_) -> void:
+#	$FPS.text = str(Engine.get_frames_per_second())

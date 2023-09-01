@@ -37,7 +37,7 @@ func init_lands() -> void:
 			
 			if island_description.lands.has(input.grid):
 				for key in input:
-					if island_description.lands[input.grid].has(key):
+					if island_description.lands[input.grid].has(key) and key != "island":
 						input[key] = island_description.lands[input.grid][key]
 			
 			var land = Global.scene.land.instantiate()
