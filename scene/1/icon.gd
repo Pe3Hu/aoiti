@@ -18,11 +18,20 @@ func set_attributes(input_: Dictionary) -> void:
 
 func draw() -> void:
 	match type:
-		"bay":
-			label.text = type[0].capitalize()
-		"ruin":
-			label.text = type[0].capitalize()
-		"cave":
-			label.text = type[0].capitalize()
+		"token":
+			match subtype:
+				"bay":
+					pass
+				"ruin":
+					pass
+				"cave":
+					pass
+				"shore":
+					visible = false
+				"goal":
+					pass
+					#visible = false
+			
+			label.text = subtype[0].capitalize()
 		"gold":
 			label.text = str(subtype)

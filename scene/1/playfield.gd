@@ -3,14 +3,19 @@ extends MarginContainer
 
 @onready var islands = $HBox/Islands
 @onready var market = $HBox/Market
-@onready var players = $Fractions/Players
-@onready var murloc = $Fractions/Barbarians/Murloc
+@onready var senate = $HBox/Senate
+
+var end = false
+var turn = 0
 
 
 func _ready() -> void:
-	market.playfield = self
-	init_fractions()
+	var input = {}
+	input.playfield = self
+	market.set_attributes(input)
+	senate.set_attributes(input)
 	init_islands()
+	start()
 
 
 func init_islands() -> void:
@@ -26,23 +31,5 @@ func init_islands() -> void:
 		island.set_attributes(input)
 
 
-func init_fractions() -> void:
-	update_murloc_fraction()
-
-
-func update_murloc_fraction() -> void:
-	var input = {}
-	input.playfield = self
-	input.race = "murloc"
-	input.specialization = null
-	murloc.set_attributes(input)
-
-
-func add_player_fraction() -> void:
-	var input = {}
-	input.playfield = self
-	input.race = null
-	input.specialization = null
-	var fraction = Global.scene.fraction.instantiate()
-	players.add_child(fraction)
-	murloc.set_attributes(input)
+func start() -> void:
+	senate.pass_crown()

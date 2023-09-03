@@ -8,6 +8,7 @@ extends MarginContainer
 var playfield = null
 var title = null
 var grids = {}
+var bays = []
 
 
 func set_attributes(input_: Dictionary) -> void:
@@ -16,6 +17,7 @@ func set_attributes(input_: Dictionary) -> void:
 	
 	init_lands()
 	init_boundaries()
+	set_shores()
 
 
 func init_lands() -> void:
@@ -46,6 +48,9 @@ func init_lands() -> void:
 			
 			if input.terrain != null:
 				grids[input.grid] = land
+				
+				if input.bay:
+					bays.append(land)
 
 
 func init_boundaries() -> void:
@@ -65,4 +70,17 @@ func init_boundaries() -> void:
 					var boundary = Global.scene.boundary.instantiate()
 					boundaries.add_child(boundary)
 					boundary.set_attributes(input)
-	
+
+
+func set_shores() -> void:
+	for grid in grids:
+		var land = grids[grid]
+		var shore = false
+		
+		for neighbor in land.neighbors:
+			if neighbor.terrain == "pond":
+				shore = true
+				break
+		
+		if !shore:
+			land.remove_token("shore")

@@ -1,0 +1,53 @@
+[gd_scene load_steps=5 format=3 uid="uid://d08weigpdkc5d"]
+
+[ext_resource type="Script" path="res://scene/2/senate.gd" id="1_1oli5"]
+[ext_resource type="FontFile" uid="uid://bvnpo88mdytkv" path="res://asset/font/letter/JosefinSans-Bold.ttf" id="1_2c7kj"]
+[ext_resource type="PackedScene" uid="uid://gceecv7v6yoe" path="res://scene/2/fraction.tscn" id="3_hmbwo"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7paps"]
+
+[node name="Senate" type="MarginContainer"]
+custom_minimum_size = Vector2(5, 5)
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+script = ExtResource("1_1oli5")
+
+[node name="BG" type="Panel" parent="."]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_7paps")
+
+[node name="Label" type="Label" parent="."]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_2c7kj")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Fractions" type="VBoxContainer" parent="."]
+layout_mode = 2
+alignment = 1
+
+[node name="Barbarians" type="HBoxContainer" parent="Fractions"]
+visible = false
+layout_mode = 2
+alignment = 1
+
+[node name="Murloc" parent="Fractions/Barbarians" instance=ExtResource("3_hmbwo")]
+layout_mode = 2
+
+[node name="Leaders" type="VBoxContainer" parent="Fractions"]
+layout_mode = 2
+alignment = 1

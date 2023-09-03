@@ -1,5 +1,6 @@
-[gd_scene load_steps=4 format=3 uid="uid://bx2v4ayiwnedr"]
+[gd_scene load_steps=5 format=3 uid="uid://bx2v4ayiwnedr"]
 
+[ext_resource type="Script" path="res://scene/0/sketch.gd" id="1_4hksh"]
 [ext_resource type="FontFile" uid="uid://bvnpo88mdytkv" path="res://asset/font/letter/JosefinSans-Bold.ttf" id="1_b8lal"]
 [ext_resource type="PackedScene" uid="uid://dj32cu343n387" path="res://scene/1/playfield.tscn" id="2_4v08d"]
 
@@ -21,6 +22,7 @@ grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
+script = ExtResource("1_4hksh")
 
 [node name="BG" type="Panel" parent="."]
 layout_mode = 2

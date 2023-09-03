@@ -24,7 +24,39 @@ func _ready() -> void:
 
 func init_arr() -> void:
 	arr.edge = [1, 2, 3, 4, 5, 6]
-	arr.token = ["bay", "ruin", "cave"]
+	arr.token = ["bay", "ruin", "cave", "shore", "goal"]
+	arr.terrain = ["forest", "swamp", "steppe", "hill", "mountain", "pond"]
+	arr.invasion = []
+	arr.tax = []
+	
+	
+	arr.phase = {
+		"lead fraction": [
+			"purchase market slot",
+			"strategic choice"
+			],
+		"strategic choice": [
+			"faction potential assessment"
+		],
+		"regional conquest": [
+			"regional withdrawal",
+			"troop assembly",
+			"initial disembarkation",
+			"expansion",
+			"last spurt",
+			"coin receipt"
+		],
+		"fraction decay": [
+			"troop retreat",
+			"fraction auxiliary",
+			"coin receipt"
+		],
+		"coin receipt": [
+			"tax collection",
+			"enmity bonus",
+			"pass crown"
+		],
+	}
 
 
 func init_num() -> void:
@@ -237,6 +269,11 @@ func init_specialization() -> void:
 			
 			if data.invasion.strength == 0:
 				data.erase("invasion")
+			else:
+				arr.invasion.append(data.invasion.land)
+			
+			if data.has("tax"):
+				arr.tax.append(data.tax)
 			
 			data.erase("available")
 			dict.specialization.title[data.title] = data
@@ -258,6 +295,7 @@ func init_scene() -> void:
 	scene.troop = load("res://scene/1/troop.tscn")
 	
 	scene.fraction = load("res://scene/2/fraction.tscn")
+	scene.leader = load("res://scene/2/leader.tscn")
 	
 	
 	pass

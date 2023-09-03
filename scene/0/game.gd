@@ -6,6 +6,8 @@ func _ready() -> void:
 	Global.node.game.get_node("Layer0").add_child(Global.node.sketch)
 	#datas.sort_custom(func(a, b): return a.value < b.value)
 	#012 description
+	
+	#Global.node.sketch.playfield.start()
 	pass
 
 

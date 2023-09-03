@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://scene/1/playfield.gd" id="1_uwqtv"]
 [ext_resource type="FontFile" uid="uid://bvnpo88mdytkv" path="res://asset/font/letter/JosefinSans-Bold.ttf" id="1_yf6i0"]
-[ext_resource type="PackedScene" uid="uid://gceecv7v6yoe" path="res://scene/2/fraction.tscn" id="3_ojd2w"]
+[ext_resource type="PackedScene" uid="uid://d08weigpdkc5d" path="res://scene/2/senate.tscn" id="3_xd81w"]
 [ext_resource type="PackedScene" uid="uid://dnb2u36frv1e3" path="res://scene/2/market.tscn" id="4_jyue3"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7paps"]
@@ -37,23 +37,10 @@ theme_override_fonts/font = ExtResource("1_yf6i0")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Fractions" type="VBoxContainer" parent="."]
-layout_mode = 2
-alignment = 1
-
-[node name="Barbarians" type="HBoxContainer" parent="Fractions"]
-visible = false
-layout_mode = 2
-alignment = 1
-
-[node name="Murloc" parent="Fractions/Barbarians" instance=ExtResource("3_ojd2w")]
-layout_mode = 2
-
-[node name="Players" type="VBoxContainer" parent="Fractions"]
-layout_mode = 2
-alignment = 1
-
 [node name="HBox" type="HBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="Senate" parent="HBox" instance=ExtResource("3_xd81w")]
 layout_mode = 2
 
 [node name="Islands" type="GridContainer" parent="HBox"]
